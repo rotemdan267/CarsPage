@@ -1,0 +1,9 @@
+<select class="form-select form-select-lg mb-3" [(ngModel)]="selectedCar" name="cars" id="cars">
+    <option value="" disabled selected hidden>Select a car</option>
+    <option value="lamborghini">Lamborghini</option>
+    <option value="ferrari">Ferrari</option>
+    <option value="audi">Audi</option>
+    <option value="porsche">Porsche</option>
+    <option value="cadillac">Cadillac</option>
+</select>
+<app-child [car]="selectedCar"></app-child>

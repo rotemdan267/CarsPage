@@ -1,0 +1,15 @@
+<div class=" d-flex align-items-center" [ngSwitch]="car">
+    <span class="badge rounded-pill bg-warning text-dark" *ngSwitchCase="'lamborghini'">Lamborghini</span>
+    <span class="badge rounded-pill bg-danger" *ngSwitchCase="'ferrari'">Ferrari</span>
+    <span class="badge rounded-pill bg-secondary" *ngSwitchCase="'audi'">Audi</span>
+    <span class="badge rounded-pill bg-success" *ngSwitchCase="'porsche'">Porsche</span>
+    <span class="badge rounded-pill bg-dark" *ngSwitchCase="'cadillac'">Cadillac</span>
+</div>
+
+<div>
+    <img *ngIf="car === 'lamborghini'" src="../../assets/lambo.svg" alt="">
+    <img *ngIf="car === 'ferrari'" src="../../assets/ferrari.jpg" alt="">
+    <img *ngIf="car === 'audi'" src="../../assets/audi.jpg" alt="">
+    <img *ngIf="car === 'porsche'" src="../../assets/porsche.jpg" alt="">
+    <img *ngIf="car === 'cadillac'" src="../../assets/cadillac.jpg" alt="">
+</div>
